@@ -9,27 +9,28 @@ import UIKit
 
 public protocol DekiGettersUI: DekiGettersUIViewController, DekiGettersUIScreen { }
 
-extension DekiGetters.UI: DekiGettersUI {
+public extension DekiGettersUI {
     
     // MARK: ViewController
     
-    public static var topViewController: UIViewController? { DekiGetters.UI.VC.topViewController }
+    static var topViewController: UIViewController? { DekiGetters.UI.VC.topViewController }
     
-    public static var topVisibleViewController: UIViewController? { DekiGetters.UI.VC.topVisibleViewController }
+    static var topVisibleViewController: UIViewController? { DekiGetters.UI.VC.topVisibleViewController }
     
     // MARK: Screen
     
-    public static var keyWindow: UIWindow? { DekiGetters.UI.Screen.keyWindow }
+    static var keyWindow: UIWindow? { DekiGetters.UI.Screen.keyWindow }
     
-    public static var windowSize: CGRect? { DekiGetters.UI.Screen.windowSize }
+    static var windowSize: CGRect? { DekiGetters.UI.Screen.windowSize }
     
-    public static var safeAreaInsets: UIEdgeInsets? { DekiGetters.UI.Screen.safeAreaInsets }
+    static var safeAreaInsets: UIEdgeInsets? { DekiGetters.UI.Screen.safeAreaInsets }
     
-    public static var screenSize: CGSize { DekiGetters.UI.Screen.screenSize }
+    static var screenSize: CGSize { DekiGetters.UI.Screen.screenSize }
     
-    public static var screenScale: CGFloat { DekiGetters.UI.Screen.screenScale }
+    static var screenScale: CGFloat { DekiGetters.UI.Screen.screenScale }
     
-    public static var statusBarFrame: CGRect { DekiGetters.UI.Screen.statusBarFrame }
+    static var statusBarFrame: CGRect { DekiGetters.UI.Screen.statusBarFrame }
     
-    public static var navBarFrame: CGRect? { DekiGetters.UI.Screen.navBarFrame }
+    static var navBarFrame: CGRect? { DekiGetters.UI.Screen.navBarFrame }
 }
+
